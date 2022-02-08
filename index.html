@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="files/logo.png" type="image/x-icon">
+
+    <title>Link Saver</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <section id="Main">
+        <div class=logo>
+            <svg id="logo" width="79.6" height="25" viewBox="0 0 79.6 25">
+                <defs>
+                    <filter id="Link_Saver" x="23.4" y="0.956" width="56.2" height="23.2" filterUnits="userSpaceOnUse">
+                        <feOffset dx="1" dy="1" input="SourceAlpha" />
+                        <feGaussianBlur stdDeviation="1.5" result="blur" />
+                        <feFlood flood-opacity="0.161" />
+                        <feComposite operator="in" in2="blur" />
+                        <feComposite in="SourceGraphic" />
+                    </filter>
+                    <filter id="L" x="5.001" y="0" width="12" height="22" filterUnits="userSpaceOnUse">
+                        <feOffset dx="1" dy="1" input="SourceAlpha" />
+                        <feGaussianBlur stdDeviation="1" result="blur-2" />
+                        <feFlood flood-opacity="0.161" />
+                        <feComposite operator="in" in2="blur-2" />
+                        <feComposite in="SourceGraphic" />
+                    </filter>
+                    <filter id="S" x="9.001" y="3" width="13" height="22" filterUnits="userSpaceOnUse">
+                        <feOffset dx="1" dy="1" input="SourceAlpha" />
+                        <feGaussianBlur stdDeviation="1" result="blur-3" />
+                        <feFlood flood-opacity="0.161" />
+                        <feComposite operator="in" in2="blur-3" />
+                        <feComposite in="SourceGraphic" />
+                    </filter>
+                </defs>
+                <g id="logo" transform="translate(0 0.012)">
+                    <g transform="matrix(1, 0, 0, 1, 0, -0.01)" filter="url(#Link_Saver)">
+                        <text id="Link_Saver-2" data-name="Link Saver" transform="translate(27 15.56)" fill="#d76bff"
+                            stroke="#707070" stroke-width="0.1" font-size="10" font-family="SegoeUI-Semibold, Segoe UI"
+                            font-weight="600">
+                            <tspan x="0" y="0">Link Saver</tspan>
+                        </text>
+                    </g>
+                    <g id="Ellipse_1" data-name="Ellipse 1" transform="matrix(1, -0.017, 0.017, 1, 0, 0.429)"
+                        fill="none" stroke="#707070" stroke-width="1">
+                        <ellipse cx="12.288" cy="12.275" rx="12.288" ry="12.275" stroke="none" />
+                        <ellipse cx="12.288" cy="12.275" rx="11.788" ry="11.775" fill="none" />
+                    </g>
+                    <g id="Letters" transform="translate(7.001 1.988)">
+                        <g transform="matrix(1, 0, 0, 1, -7, -2)" filter="url(#L)">
+                            <text id="L-2" data-name="L" transform="translate(7 15)" fill="#d76bff" font-size="12"
+                                font-family="SegoeUI-Semibold, Segoe UI" font-weight="600">
+                                <tspan x="0" y="0">L</tspan>
+                            </text>
+                        </g>
+                        <g transform="matrix(1, 0, 0, 1, -7, -2)" filter="url(#S)">
+                            <text id="S-2" data-name="S" transform="translate(11 18)" fill="#d76bff" font-size="12"
+                                font-family="SegoeUI-Semibold, Segoe UI" font-weight="600">
+                                <tspan x="0" y="0">S</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+
+
+
+        </div>
+        <div id="btns">
+            <button id="save-btn">Save Page</button>
+            <button id="customURL-btn">Custom URL</button>
+            <input type="url" placeholder="Without https://" id="input-txt">
+            <button id="delete-btn">Delete All</button>
+        </div>
+        <div class="links">
+            <ul id="ul-el">
+
+            </ul>
+        </div>
+    </section>
+
+    <script src="script/main.js"></script>
+</body>
+
+</html>

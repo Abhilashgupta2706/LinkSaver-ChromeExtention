@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #D76BFF;
+    --active: #cd44ff;
+    --secondary: #F3D4FF;
+    --border: #7070704b;
+    --links: #4e4e4ef8;
+}
+
+#Main {
+    background-color: var(--secondary);
+    min-height: 150px;
+    width: 500px;
+    padding: 1rem;
+}
+
+.logo {
+    margin-bottom: .8rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: .5rem;
+    width: 100%;
+}
+
+#btns {
+    margin: 1rem auto;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+button {
+    background: var(--primary);
+    padding: .4rem .6rem;
+    border: 1px solid var(--primary);
+    color: #fff;
+    font-weight: bold;
+}
+
+button:active {
+    background-color: var(--active);
+}
+
+button:last-child {
+    background: #fff;
+    color: var(--primary);
+}
+
+button:last-child:active {
+    background: var(--primary);
+    color: #fff;
+}
+
+input {
+    height: 100%;
+    font-size: 13px;
+    padding: 0 .4rem;
+    border-color: var(--primary);
+}
+input::placeholder{
+    font-size: 12px;
+}
+input:focus {
+    outline: none;
+}
+
+.links ul li {
+    list-style: square inside;
+}
+
+.links ul li a {
+    font-style: italic;
+    text-decoration: none;
+    color: var(--links);
+}
+
+.links ul li a:hover {
+    text-decoration: underline;
+}

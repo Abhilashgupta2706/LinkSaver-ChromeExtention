@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "version": "0.0.0.1",
+    "name": "Link saver",
+    "description": "Link Saver ectension helps to save the important links for future help to find the IMPORTANT links in one place.",
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "files/logo.png"
+    },
+    "permissions": [
+        "tabs"
+    ]
+}
